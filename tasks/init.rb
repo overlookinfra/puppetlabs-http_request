@@ -126,7 +126,7 @@ class HTTPRequest < TaskHelper
   # overridden by a user.
   def format_headers(headers, json)
     default = json ? { 'Content-Type' => 'application/json' } : {}
-    default.merge(headers || {})
+    default.merge(headers || {}).transform_keys(&:to_s)
   end
 
   # Parses the redirect URL and expands it relative to the
