@@ -1,3 +1,15 @@
+## Release 0.2.1
+
+### Bug fixes
+
+- **Convert headers to strings**
+  ([#4](https://github.com/puppetlabs/puppetlabs-http_request/pull/4))
+
+  Headers set under the `headers` parameter are now converted to strings before
+  making a request. Previously, headers were passed to the request as symbols.
+
+  _Contributed by [barskern](https://github.com/barskern)._
+
 ## Release 0.2.0
 
 ### New features
