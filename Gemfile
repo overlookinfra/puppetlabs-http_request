@@ -25,3 +25,8 @@ group :development do
   # Pin puppet blacksmith to avoid failures in forge module push job
   gem "puppet-blacksmith", "4.1.2"
 end
+
+# Dependencies needed to run the tests
+group :test do
+  gem "webmock"
+end
