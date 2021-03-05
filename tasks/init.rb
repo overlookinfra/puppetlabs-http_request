@@ -63,7 +63,7 @@ class HTTPRequest < TaskHelper
       client.verify_mode = OpenSSL::SSL::VERIFY_PEER
       client.ca_file     = opts[:cacert] if opts[:cacert]
       client.cert        = OpenSSL::X509::Certificate.new(File.read(opts[:cert])) if opts[:cert]
-      client.key         = OpenSSL::PKey::RSA.new(opts[:key]) if opts[:key]
+      client.key         = OpenSSL::PKey::RSA.new(File.read(opts[:key])) if opts[:key]
     end
 
     # Build the request
