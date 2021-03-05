@@ -1,3 +1,13 @@
+## Release 0.2.2
+
+### Bug fixes
+
+- **Read key data from file passed to `key` parameter**
+  ([#8](https://github.com/puppetlabs/puppetlabs-http_request/pull/8))
+
+  Key data is now read from the file path passed to the `key` parameter.
+  Previously, the file path itself was used as the key data.
+
 ## Release 0.2.1
 
 ### Bug fixes
