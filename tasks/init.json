@@ -43,7 +43,7 @@
     },
     "method": {
       "description": "The HTTP method to use.",
-      "type": "Enum[delete, get, post, put]",
+      "type": "Enum[delete, get, post, put, patch]",
       "default": "get"
     },
     "path": {
