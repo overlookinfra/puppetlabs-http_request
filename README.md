@@ -84,7 +84,7 @@ The maximum number of redirects to follow when `follow_redirects` is `true`.
 
 The HTTP method to use.
 
-- **Type:** `Enum[delete, get, post, put]`
+- **Type:** `Enum[delete, get, post, put, patch]`
 - **Default:** `get`
 
 ### `path`
