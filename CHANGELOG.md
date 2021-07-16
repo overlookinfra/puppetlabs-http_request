@@ -1,3 +1,14 @@
+# Changelog
+
+## Release 0.3.0
+
+### New features
+
+- **Update `method` parameter to accept `patch`**
+  ([#10](https://github.com/puppetlabs/puppetlabs-http_request/issues/10))
+
+  The `method` parameter now accepts `patch` as a value.
+
 ## Release 0.2.2
 
 ### Bug fixes
