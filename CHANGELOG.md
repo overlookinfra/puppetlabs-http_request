@@ -10,6 +10,8 @@
   The `http_request` task no longer errors when the response does not
   include a body.
 
+  _Contributed by [op-ct](https://github.com/op-ct)._
+
 ## Release 0.3.0
 
 ### New features
