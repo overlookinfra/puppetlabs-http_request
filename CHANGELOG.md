@@ -1,5 +1,15 @@
 # Changelog
 
+## Release 0.3.1
+
+### Bug fixes
+
+- **Handle reponses without a body**
+  ([#14](https://github.com/puppetlabs/puppetlabs-http_request/pull/14))
+
+  The `http_request` task no longer errors when the response does not
+  include a body.
+
 ## Release 0.3.0
 
 ### New features
