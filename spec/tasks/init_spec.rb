@@ -83,7 +83,7 @@ describe HTTPRequest do
     expect(result.key?(:_error)).to be(true)
   end
 
-  it 'errors if the body is not a String' do
+  it 'errors if the request body is not a String' do
     opts = {
       method:   'post',
       base_url: "#{url}/post",
@@ -141,6 +141,20 @@ describe HTTPRequest do
       _ = handler.task(opts)
 
       expect(stub).to have_been_requested.once
+    end
+  end
+
+  context 'when an empty response body is received' do
+    it 'gracefully returns nil' do
+      stub_request(:post, "#{url}/post")
+        .to_return(status: 204, body: nil)
+      opts = {
+        method:   'post',
+        base_url: "#{url}/post"
+      }
+      result = handler.task(opts)
+      expect(result.keys).to match_array(success_keys)
+      expect(result[:body]).to be_nil
     end
   end
 end
