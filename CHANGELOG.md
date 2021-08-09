@@ -21,6 +21,8 @@
 
   The `method` parameter now accepts `patch` as a value.
 
+  _Contributed by [op-ct](https://github.com/op-ct)._
+
 ## Release 0.2.2
 
 ### Bug fixes
